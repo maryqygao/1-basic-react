@@ -7,15 +7,11 @@ module.exports = {
   devtool: debug ? "inline-sourcemap" : null,
   entry: "./js/client.js",
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['react', 'env'],
-          plugins: ['react-html-attrs', 'transform-decorators-legacy', 'transform-class-properties'],
-        }
+        loader: 'babel-loader'
       }
     ]
   },
