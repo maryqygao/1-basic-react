@@ -3,9 +3,9 @@ import React from 'react';
 import Title from './Header/Title';
 
 export default class Header extends React.Component {
-  handleInputChange = (e) => {
+  handleInputChange = e => {
     this.props.changeTitle(e.target.value);
-  }
+  };
 
   render() {
     return (
@@ -14,7 +14,8 @@ export default class Header extends React.Component {
         <input
           value={this.props.title}
           onChange={this.handleInputChange}
-          type="text" />
+          type="text"
+        />
       </header>
     );
   }
