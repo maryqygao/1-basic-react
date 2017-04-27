@@ -1,16 +1,18 @@
 {
-    "extends": "airbnb",
-    "plugins": [
-        "react",
-        "jsx-a11y",
-        "import"
+  "extends": "airbnb",
+  "plugins": [
+    "import",
+    "jsx-a11y",
+    "react"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".js", ".jsx"]
+      }
     ],
-    "rules": {
-      "react/jsx-filename-extension": [
-        1,
-        {
-          "extensions": [".js", ".jsx"]
-        }
-      ]
-    }
+    "comma-dangle": ["error", "never"]
+  }
 }
